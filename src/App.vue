@@ -1,5 +1,17 @@
 <template>
-  <div id="app">
+  <div>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/users">Users</router-link>
+    </nav>
     <router-view></router-view>
   </div>
 </template>
+
+<style scoped>
+  div {
+    width: 700px;
+    margin: auto;
+    padding-top: 50px;
+  }
+</style>
