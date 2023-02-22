@@ -5,8 +5,14 @@
       <router-link to="/users" active-class="link--active" exact>Users</router-link>
     </nav>
     <router-view></router-view>
+    <Home></Home>
   </div>
 </template>
+
+<script>
+
+</script>
+
 
 <style scoped>
   div {
