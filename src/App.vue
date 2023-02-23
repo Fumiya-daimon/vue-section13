@@ -1,27 +1,6 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/" active-class="link--active" exact>Home</router-link>
-      <router-link to="/users" active-class="link--active" exact>Users</router-link>
-    </nav>
+    <router-view name="header"></router-view>
     <router-view></router-view>
-    <Home></Home>
   </div>
 </template>
-
-<script>
-
-</script>
-
-
-<style scoped>
-  div {
-    width: 700px;
-    margin: auto;
-    padding-top: 50px;
-  }
-
-  .link--active {
-    font-size: 60px;
-  }
-</style>
