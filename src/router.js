@@ -15,6 +15,9 @@ export default new Router({
     { path: '/', component: {
       default: MyHome,
       header: HeaderHome
+      },
+      beforeEnter(to, from, next) {
+        next(false);
       }
     },
     { path: '/users/:id',
