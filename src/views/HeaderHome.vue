@@ -9,17 +9,17 @@
 </template>
 
 <script>
-import { mapMutations} from 'vuex';
+import { mapActions } from 'vuex';
 
 export default {
   methods: {
-    ...mapMutations(['increment', 'decrement'])
+    ...mapActions(['increment', 'decrement']),
     // increment() {
-    //   return this.$store.commit('increment', 2);
+    //   return this.$store.dispatch('increment');
     // },
     // decrement() {
-    //   return this.$store.commit('decrement', 2);
-    // }
+    //   return this.$store.dispatch('decrement');
+    // },
   },
 }
 </script>
