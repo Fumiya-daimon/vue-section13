@@ -24,7 +24,26 @@ export default ({
   // created: {
   //   console.log('created')
   // }
-  props: ["id"]
+  props: ["id"],
+  beforeRouteEnter (to, from, next) {
+    console.log('beforeRouteEnter');
+    next(vm => {
+      console.log(vm.id);
+    })
+  },
+  beforeRouteUpdate (to, from, next) {
+    console.log('beforeRouteUpdate');
+    next()
+  },
+  beforeRouteLeave (to, from, next) {
+    console.log('beforeRouteLeave');
+    const isLeave = window.confirm('本当にこのページを離れますか？');
+    if (isLeave === true) {
+      next();
+    } else {
+      next(false);
+    }
+  },
   // watch: {
   //   $route(to, from) {
   //     console.log(to);
