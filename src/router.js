@@ -1,11 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MyHome from './views/MyHome.vue'
-import MyUsers from './views/MyUsers.vue'
-import UsersPosts from './views/UsersPosts.vue'
-import UsersProfile from './views/UsersProfile.vue'
-import HeaderHome from './views/HeaderHome.vue'
-import HeaderUsers from './views/HeaderUsers.vue'
+
+const MyHome = () => import('./views/MyHome.vue')
+const MyUsers = () => import('./views/MyUsers.vue')
+const UsersPosts = () => import('./views/UsersPosts.vue')
+const UsersProfile = () => import('./views/UsersProfile.vue')
+const HeaderHome = () => import('./views/HeaderHome.vue')
+const HeaderUsers = () => import('./views/HeaderUsers.vue')
+
+// import MyHome from './views/MyHome.vue'
+// import MyUsers from './views/MyUsers.vue'
+// import UsersPosts from './views/UsersPosts.vue'
+// import UsersProfile from './views/UsersProfile.vue'
+// import HeaderHome from './views/HeaderHome.vue'
+// import HeaderUsers from './views/HeaderUsers.vue'
 
 Vue.use(Router)
 
